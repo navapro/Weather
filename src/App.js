@@ -1,6 +1,6 @@
 import React from "react";
 
-import Titles from "./components/Title"
+import Title from "./components/Title"
 import Form from "./components/Form"
 import Weather from "./components/Weather"
 
@@ -8,7 +8,7 @@ class App extends React.Component {
   render(){
     return(
       <div> 
-        <Titles />
+        <Title />
         <Form />
         <Weather />
       </div>
