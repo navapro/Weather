@@ -27,7 +27,16 @@ class App extends React.Component {
     const data = await api_call.json();
     console.log(data);
 
-    
+    this.setState({
+
+      temperature: data.main.temp,
+      city: data.name,
+      country: data.sys.country,
+      humidity: data.main.humidity,
+      description: data.Weather[0].description,
+      error: ""
+
+    });
   }
 
   render(){
@@ -36,7 +45,12 @@ class App extends React.Component {
         <Title />
         <Form getWeather = {this.getWeather}/>
         <Weather
-          
+          temperature = {this.state.temperature}
+          city = {this.state.city}
+          country = {this.state.country}
+          humidity = {this.state.humidity}
+          description = {this.state.descriiption}
+          error = {this.state.error}
         />
       </div>
     );
