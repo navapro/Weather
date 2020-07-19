@@ -121,7 +121,7 @@ button:active {
 
 .weather__error {
   color: #f16051;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: 200;
 }
