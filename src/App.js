@@ -34,7 +34,6 @@ class App extends React.Component {
         humidity: data.main.humidity,
         description: data.weather[0].description,
         error: ""
-
       });
     }else{
 
